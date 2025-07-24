@@ -1,0 +1,9 @@
+services:
+  pg:
+    image: bitnami/postgresql:11
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: check-gym
+    ports:
+    - 5432:5432
